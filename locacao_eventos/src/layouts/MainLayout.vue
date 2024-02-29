@@ -1,18 +1,15 @@
 <template>
   <q-layout view="hHh lpR fFf">
 
-    <q-header reveal elevated class="bg-dark text-white">
+    <!-- <q-header reveal elevated class="bg-dark text-white">
       <q-toolbar>
         <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
 
         <q-toolbar-title style="font-size: medium;">
-          <!-- <q-avatar>
-            <img ssrc="~assets/Defer_Files/img/logo.svg">
-          </q-avatar> -->
           DEFER <small>Eventos & Servicos</small>
         </q-toolbar-title>
       </q-toolbar>
-    </q-header>
+    </q-header> -->
 
     <q-drawer
       v-model="leftDrawerOpen"

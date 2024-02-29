@@ -28,7 +28,7 @@
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router';
 
-const colors = ['#db56db', '#60b367', '#a66f47']
+const colors = ['#ea269b', '#60b367', '#a66f47']
 const backgroundColor = ref(colors[0])
 const transition = ref('flip-right')
 

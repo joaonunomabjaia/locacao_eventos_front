@@ -3,20 +3,20 @@
     <q-card
       :square="false"
       style="
-        background: radial-gradient(circle at left, #60b367 45%, #8b5936, #c333b4 );
+        background: radial-gradient(circle at left, #ea269b 100%, #8b5936, #60b367 );
         border-bottom-left-radius: 100em;
         border-bottom-right-radius: 100em;
       "
     >
       <div class="row q-py-md q-ml-md">
 
-        <div class="col">
-            <q-img
-          class="logo-animation shadow-9"
-          alt="Defer logo"
-          src="~assets/Defer_Files/img/logo.svg"
-          style="width: 100px; height: 100px">
-        </q-img>
+        <div class="col" style="width: 80px; height: 80px">
+          <q-img
+            class="logo-animation shadow-13"
+            alt="Defer logo"
+            src="~assets/Defer_Files/img/logo.svg"
+            style="width: 100px; height: 100px; border-radius: 100em;">
+          </q-img>
         </div>
 
         <div class="col"></div>
@@ -79,7 +79,7 @@
             label="Utilizador"
           >
             <template v-slot:append>
-              <q-icon name="person" color="secondary" />
+              <q-icon name="person" color="primary" />
             </template>
           </q-input>
         </div>
@@ -102,7 +102,7 @@
                 :name="isPwd ? 'visibility_off' : 'visibility'"
                 class="cursor-pointer"
                 @click="isPwd = !isPwd"
-                color="secondary"
+                color="primary"
               />
             </template>
           </q-input>
@@ -113,7 +113,7 @@
             class="full-width q-py-sm"
             unelevated
             rounded
-            color="secondary"
+            color="primary"
             type="submit"
             label="Entrar"
           />
@@ -131,7 +131,7 @@
             Novo Membro? 
             <q-btn
               flat
-              color="primary"
+              color="secondary"
               label="Registe-se Aqui."
               no-caps
           /></span>
@@ -143,8 +143,6 @@
 
 <script setup>
     import { ref, onMounted, computed } from 'vue';
-
-    const tab = ref('mobilizer');
     const username = ref('');
     const password = ref('');
     const submitting = ref(false)
